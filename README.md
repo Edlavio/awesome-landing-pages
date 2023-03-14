@@ -6,8 +6,8 @@
 
 ## Table of contents
 
-- [Built with](#built-with)
-- [License](#license)
+  - [Built with](#built-with-)
+- [License](#license-)
 
 # [Travel Expert](https://edlavio.github.io/Landing-Pages-Challenge/Travel%20Expert)
 ![Travel Expert](./Travel%20Expert/img/travel.png)
