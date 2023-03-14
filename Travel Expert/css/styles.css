@@ -17,12 +17,7 @@
 
 body {
   height: 100vh;
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: 115% 280%;
-  background-position-x: center;
-  background-position-y: -12rem;
-  background-attachment: fixed;
+  background: url(../img/background.jpg) no-repeat center -12rem/ 115% 280% fixed;
 }
 
 main {
@@ -40,7 +35,6 @@ main div > h1 {
   color: var(--gray-900);
   font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 0.250rem;
 }
 
 main div > h1 span {
@@ -51,6 +45,7 @@ main div > p {
   font-family: 'Inter', sans-serif;
   color: var(--gray-200);
   font-size: 1.25rem;
+  padding: 0.35rem;
 }
 
 main div:nth-child(2) button > a {
