@@ -5,6 +5,7 @@
   border: none;
   outline: none;
   text-decoration: none;
+  font-family: 'Cinzel', serif; 
 }
 
 :root {
@@ -15,13 +16,13 @@
 }
 
 body {
-  font-family: 'Cinzel', serif; 
   height: 100vh;
-  color: var(--gray-900);
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-size: 115% 280%;
+  background-position-x: center;
+  background-position-y: -12rem;
+  background-attachment: fixed;
 }
 
 main {
@@ -36,7 +37,9 @@ main {
 }
 
 main div > h1 {
+  color: var(--gray-900);
   font-size: 4rem;
+  font-weight: 700;
   margin-bottom: 0.250rem;
 }
 
