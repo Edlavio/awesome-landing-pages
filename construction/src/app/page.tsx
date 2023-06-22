@@ -1,5 +1,7 @@
 import Logos from "@/components/Logos";
 import Banner from "@/layouts/Banner";
+import Cards from "@/layouts/Cards";
+import ContactUs from "@/layouts/ContactUs";
 import Services from "@/layouts/Services";
 
 export default function Home() {
@@ -8,6 +10,8 @@ export default function Home() {
     <Banner/>
     <Logos/>
     <Services/>
+    <Cards/>
+    <ContactUs/>
    </>
   )
 }

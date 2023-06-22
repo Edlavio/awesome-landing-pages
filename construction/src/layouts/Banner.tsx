@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Button from '@/components/Button'
-import TotalNumbers from '@/components/TotalNumbers'
 import hero from '../assets/hero.png'
 
 export default function Banner() {
