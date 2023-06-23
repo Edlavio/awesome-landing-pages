@@ -15,6 +15,9 @@ export default function Navbar() {
           <li>
             <a href="#contact">Contact</a>
           </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
         </ul>
       </nav>
     </header>

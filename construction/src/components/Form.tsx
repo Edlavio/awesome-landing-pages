@@ -64,7 +64,7 @@ export default function Form() {
         id="message"
         placeholder="Message"
         title="Message"
-        className='rounded-lg w-full h-48 text-gray-500 text-base resize-none bg-gray-50 border-0 placeholder:text-gray-300 focus:ring-2 focus:ring-gray-100 focus:bg-white mb-2'
+        className='rounded-lg w-full h-48 p-4 text-gray-500 text-base resize-none bg-gray-50 border-0 placeholder:text-gray-200 focus:ring-2 focus:ring-gray-100 focus:bg-white mb-2'
         value={formValues.message}
         onChange={handleChange}
       />
