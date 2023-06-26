@@ -8,13 +8,14 @@ interface CardProps {
   city: string
   number: string
   email: string
+  className?: string
 }
 
-export default function Card({ srcImage, alt = "team-member", name, city, number, email }: CardProps) {
+export default function Card({ srcImage, alt = "team-member", name, city, number, email, className }: CardProps) {
   return (
-    <section className="flex flex-col justify-between text-center p-7 w-80 h-[435px] rounded-md shadow-lg shadow-slate-200">
-      <article className="flex justify-between w-full">
-        <Star color="#f0bb00" size={24} /> <MoreVertical />
+    <section className={`${className} flex flex-col justify-between text-center p-7 w-80 h-[435px] rounded-md shadow-lg shadow-slate-200`}>
+      <article className="flex w-full">
+        <Star color="#f0bb00" size={24} />
       </article>
       <article className="flex flex-col items-center gap-5">
         <Image src={srcImage} width={120} height={120} alt={alt} />
@@ -25,7 +26,9 @@ export default function Card({ srcImage, alt = "team-member", name, city, number
       </article>
       <article className="flex flex-col gap-2">
         <span className="text-base text-gray-300">{number}</span>
-        <span className="text-lg text-cyan-500">{email}</span>
+        <a href={`mailto:${email}`} className="text-lg text-cyan-500">
+          {email}
+        </a>
       </article>
     </section>
   )

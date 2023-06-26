@@ -4,8 +4,8 @@ import { ArrowRightCircle, Facebook, Linkedin, Twitter } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="flex flex-col items-center gap-8 w-full pt-10 mt-20">
-      <div className="grid grid-cols-4 justify-items-center">
-        <section className="flex flex-col gap-8">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 place-items-start justify-items-center">
+        <section className="flex flex-col gap-8 w-full">
           <h1 className="text-2xl font-semibold text-cyan-500">
             Construction
           </h1>
@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
           </article>
         </section>
-        <section className="flex flex-col gap-8">
+        <section className="flex flex-col gap-8 w-full">
           <h3 className="font-semibold text-gray-500 text-lg">
             Resources
           </h3>
@@ -42,7 +42,7 @@ export default function Footer() {
             </a>
           </article>
         </section>
-        <section className="flex flex-col gap-8">
+        <section className="flex flex-col gap-8 w-full">
           <h3 className="font-semibold text-gray-500 text-lg">
             Company
           </h3>
@@ -58,7 +58,7 @@ export default function Footer() {
             </a>
           </article>
         </section>
-        <section className="flex flex-col gap-8">
+        <section className="flex flex-col gap-8 w-full">
           <h3 className="font-semibold text-gray-500 text-lg">
             Get in touch
           </h3>
@@ -66,7 +66,7 @@ export default function Footer() {
             <Input
               name="getintouch"
               placeholder="Enter your email"
-              className="rounded w-44 h-10 text-xs text-gray-500 bg-gray-50 placeholder:text-gray-200 border-0 focus:ring-0 focus-within:bg-transparent"
+              className="rounded w-full h-10 text-xs text-gray-500 bg-gray-50 placeholder:text-gray-200 border-0 focus:ring-0 focus-within:bg-transparent"
             >
               <button>
                 <ArrowRightCircle size={18} className="text-cyan-500" />
