@@ -1,3 +1,4 @@
+import ButtonBackToTop from "@/components/ButtonBackToTop";
 import Partnership from "@/components/Partnership";
 import Banner from "@/layouts/Banner";
 import Blog from "@/layouts/Blog";
