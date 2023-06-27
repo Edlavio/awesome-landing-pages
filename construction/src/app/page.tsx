@@ -1,4 +1,4 @@
-import Logos from "@/components/Logos";
+import Partnership from "@/components/Partnership";
 import Banner from "@/layouts/Banner";
 import Blog from "@/layouts/Blog";
 import Cards from "@/layouts/Carousel";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <Logos />
+      <Partnership />
       <Services />
       <Cards />
       <ContactUs />

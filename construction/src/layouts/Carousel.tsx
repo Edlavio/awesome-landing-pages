@@ -14,7 +14,7 @@ export default function Cards() {
     <section className="flex flex-col py-20">
       <article id="team" className="flex flex-col py-16 gap-6 text-center items-center">
         <h2 className="font-semibold text-gray-500 text-4xl md:text-5xl leading-relaxed">Our Best Engineers</h2>
-        <p className="font-medium text-gray-300 text-base md:text-lg w-7/12">
+        <p className="font-medium text-gray-300 text-base md:text-lg w-11/12 md:w-7/12">
           Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary.
         </p>
       </article>
@@ -28,6 +28,7 @@ export default function Cards() {
           perMove: 1,
           gap: 20,
           keyboard: true,
+          drag: true,
           breakpoints: {
             640: {
               perPage: 1,
