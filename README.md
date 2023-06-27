@@ -1,7 +1,7 @@
 # Awesome Landing Pages
 A list of awesome landing pages made during your study that you can use for inspiration:
 
-### [Construction](https://construction-edlavio.vercel.app/) - A modern landing page for an Building Company, featuring a clean design, vibrant colors.
+[Construction](https://construction-edlavio.vercel.app/) - A modern landing page for an Building Company, featuring a clean design, vibrant colors.
 
 #
 ![GitHub](https://img.shields.io/github/license/Edlavio/awesome-landing-pages)
