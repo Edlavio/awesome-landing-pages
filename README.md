@@ -9,7 +9,6 @@ A list of awesome landing pages made during your study that you can use for insp
 
 ## Table of Contents
 
--
 - [Overview](#overview)
 - [Built With](#built-with)
 - [Features](#features)
