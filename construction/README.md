@@ -1,34 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Construction
 
-## Getting Started
+![GitHub](https://img.shields.io/github/license/Edlavio/awesome-landing-pages)
+![GitHub top language](https://img.shields.io/github/languages/top/Edlavio/awesome-landing-pages)
 
-First, run the development server:
+## [PREVIEW 👀](https://construction-edlavio.vercel.app/)
+
+## Table of Contents
+
+-
+- [Overview](#overview)
+- [Built With](#built-with)
+- [Features](#features)
+- [How To Use](#how-to-use)
+- [Contact](#contact)
+- [License](#license)
+
+## Overview
+
+[![HiMovie](https://user-images.githubusercontent.com/79201879/236576700-0ab2afc0-cf6b-4cc2-bb7a-c6578eac1f40.png)](https://construction-edlavio.vercel.app/)
+
+## Built With
+
+- [Next JS](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Splide JS](https://splidejs.com/)
+- [Lucide Icon](lucide.dev/)
+
+## Features
+
+-
+
+## How To Use
+
+To run this application in your machine, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# Clone this repository
+$ git clone https://github.com/Edlavio/awesome-landing-pages
+$ cd construction
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+And after you will run:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Install dependencies
+$ npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Run the app
+$ npm run dev
+```
 
-## Learn More
+## Author
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<div style="display:flex; gap:1rem;">
+  <img src="https://github.com/Edlavio.png" alt="Edlávio Pedro Alberto" width="70px">
+  <div style="display:flex; flex-direction:column; gap:0.5rem;">
+    <a href="https://www.linkedin.com/in/edlavio/" target="_blank">@edlavio (Linkedin)</a>
+    <a href="https://github.com/Edlavio" target="_blank">@Edlavio (GitHub)</a>
+  </div>
+</div>
