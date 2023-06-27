@@ -17,7 +17,8 @@
 
 ## Overview
 
-[![HiMovie](https://user-images.githubusercontent.com/79201879/236576700-0ab2afc0-cf6b-4cc2-bb7a-c6578eac1f40.png)](https://construction-edlavio.vercel.app/)
+[![Construction](https://github.com/Edlavio/awesome-landing-pages/assets/79201879/dd722112-aceb-467a-885a-2575a4118de2)](https://construction-edlavio.vercel.app/)
+
 
 ## Built With
 
@@ -55,7 +56,7 @@ $ npm run dev
 
 <div style="display:flex; gap:1rem;">
   <img src="https://github.com/Edlavio.png" alt="Edlávio Pedro Alberto" width="70px">
-  <div style="display:flex; flex-direction:column; gap:0.5rem;">
+  <div style="display:flex; flex-direction:column;">
     <a href="https://www.linkedin.com/in/edlavio/" target="_blank">@edlavio (Linkedin)</a>
     <a href="https://github.com/Edlavio" target="_blank">@Edlavio (GitHub)</a>
   </div>
