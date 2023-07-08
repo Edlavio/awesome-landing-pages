@@ -1,8 +1,7 @@
-import Navbar from '@/layouts/Navbar'
 import './globals.css'
 import { Poppins } from 'next/font/google'
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700', '900']})
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700', '900'] })
 
 export const metadata = {
   title: 'Construction - Build the future',
@@ -18,8 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} bg-white text-gray-500`}>
-        <Navbar/>
-        <main className='px-4 md:px-12 lg:px-28'>
+        <main className='mx-auto w-11/12 lg:w-10/12'>
           {children}
         </main>
       </body>

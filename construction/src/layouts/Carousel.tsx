@@ -1,23 +1,72 @@
 'use client'
 
 import { MoveLeft, MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import '@splidejs/react-splide/css/core';
 
 import Card from "@/components/Card";
-import team1 from '../assets/team1.png'
-import team2 from '../assets/team2.png'
-import team3 from '../assets/team3.png'
+import team1 from '@/assets/team1.png'
+import team2 from '@/assets/team2.png'
+import team3 from '@/assets/team3.png'
+import { fadeIn } from "@/utils/motion";
 
 export default function Cards() {
+  const team = [
+    {
+      image: team1,
+      name: 'Chris Evans',
+      city: 'Michigan, TX',
+      number: "989-653-2986",
+      email: "chrisevans@cons.com"
+    },
+    {
+      image: team2,
+      name: 'Alison Kiara',
+      city: 'Michigan, TX',
+      number: "989-653-2986",
+      email: "alisonkiara@cons.com"
+    },
+    {
+      image: team3,
+      name: 'Adam Gates',
+      city: 'Michigan, TX',
+      number: "989-653-2986",
+      email: "adamgates@cons.com"
+    },
+    {
+      image: team1,
+      name: 'Paul Bridge',
+      city: 'Michigan, TX',
+      number: "989-653-2986",
+      email: "paulbridge@cons.com"
+    },
+    {
+      image: team2,
+      name: 'Sara Storm',
+      city: 'Michigan, TX',
+      number: "989-653-2986",
+      email: "sarastorm@cons.com"
+    },
+    {
+      image: team1,
+      name: 'Clement Alves',
+      city: 'Michigan, TX',
+      number: "989-653-2986",
+      email: "clement1@cons.com"
+    },
+  ]
+
   return (
-    <section className="flex flex-col py-20">
-      <article id="team" className="flex flex-col py-16 gap-6 text-center items-center">
-        <h2 className="font-semibold text-gray-500 text-4xl md:text-5xl leading-relaxed">Our Best Engineers</h2>
+    <section className="flex flex-col py-20" id="team">
+      <motion.article variants={fadeIn('up', 'tween', 0.8, 0.5)} initial="hidden" whileInView="show" className="flex flex-col py-16 gap-6 text-center items-center">
+        <h2 className="font-semibold text-gray-500 text-4xl md:text-5xl leading-relaxed">
+          Our Best Engineers
+        </h2>
         <p className="font-medium text-gray-300 text-base md:text-lg w-11/12 md:w-7/12">
           Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary.
         </p>
-      </article>
+      </motion.article>
 
       {/* Caurosel */}
       <Splide
@@ -42,21 +91,18 @@ export default function Cards() {
         }}
       >
         <SplideTrack className="py-8">
-          <SplideSlide>
-            <Card className="mx-auto" srcImage={team1} name="Chris Evans" city="Michigan, TX" number="989-653-2986" email="chrisevans@cons.com" />
-          </SplideSlide>
-          <SplideSlide>
-            <Card className="mx-auto" srcImage={team2} name="Alison Kiara" city="Michigan, TX" number="999-000-2986" email="alisonkiara@cons.com" />
-          </SplideSlide>
-          <SplideSlide>
-            <Card className="mx-auto" srcImage={team3} name="Adam Gates" city="Michigan, TX" number="911-653-2986" email="adamgates@cons.com" />
-          </SplideSlide>
-          <SplideSlide>
-            <Card className="mx-auto" srcImage={team1} name="Paul Bridge" city="Michigan, TX" number="909-653-2006" email="pbridge@cons.com" />
-          </SplideSlide>
-          <SplideSlide>
-            <Card className="mx-auto" srcImage={team2} name="Sara Storm" city="Michigan, TX" number="911-111-2986" email="sarastorm@cons.com" />
-          </SplideSlide>
+          {team.map((team) => (
+            <SplideSlide key={team.name + team.email}>
+              <Card
+                className="mx-auto"
+                srcImage={team.image}
+                name={team.name}
+                city={team.city}
+                number={team.number}
+                email={team.email}
+              />
+            </SplideSlide>
+          ))}
         </SplideTrack>
 
         {/* Custom Arrows */}

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Button from "./Button"
-import Input from "./Input"
+import { Input } from "./Input";
 
 export default function Form() {
   const [formValues, setFormValues] = useState({
@@ -34,31 +34,37 @@ export default function Form() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-      <Input 
-        name="name" 
-        placeholder="Name" 
-        required 
-        value={formValues.name}
-        onChange={handleChange}
-        title="Your name"
-      />
-      <Input 
-        type="email" 
-        name="email" 
-        placeholder="Email" 
-        required 
-        value={formValues.email}
-        onChange={handleChange}
-        title="Your email address"
-      />
-      <Input 
-        name="subject" 
-        placeholder="Subject"
-        required 
-        value={formValues.subject}
-        onChange={handleChange}
-        title="Subject"
-      />
+      <Input.Root>
+        <Input.Field
+          name="name"
+          placeholder="Name"
+          required
+          value={formValues.name}
+          onChange={handleChange}
+          title="Your name"
+        />
+      </Input.Root>
+      <Input.Root>
+        <Input.Field
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          value={formValues.email}
+          onChange={handleChange}
+          title="Your email address"
+        />
+      </Input.Root>
+      <Input.Root>
+        <Input.Field
+          name="subject"
+          placeholder="Subject"
+          required
+          value={formValues.subject}
+          onChange={handleChange}
+          title="Subject"
+        />
+      </Input.Root>
       <textarea
         name="message"
         id="message"

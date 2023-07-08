@@ -1,4 +1,5 @@
-import Input from "@/components/Input";
+import { Input } from "@/components/Input";
+import InputIcon from "@/components/Input/InputIcon";
 import { ArrowRightCircle, Facebook, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
@@ -63,21 +64,20 @@ export default function Footer() {
             Get in touch
           </h3>
           <article className="flex flex-col gap-4 text-base text-gray-300">
-            <Input
+            <Input.Root>
+            <Input.Field
               name="getintouch"
               placeholder="Enter your email"
               className="rounded w-full h-10 text-xs text-gray-500 bg-gray-50 placeholder:text-gray-200 border-0 focus:ring-0 focus-within:bg-transparent"
-            >
-              <button>
-                <ArrowRightCircle size={18} className="text-cyan-500" />
-              </button>
-            </Input>
+            />
+            <InputIcon icon={ArrowRightCircle} size="18" className="text-cyan-500" />
+            </Input.Root>
           </article>
         </section>
       </div>
       <section className="flex text-center justify-center py-6 border-t-2 border-gray-100 w-full">
         <span className="text-gray-100 text-sm font-medium">Construction All rights reserved.</span>
       </section>
-    </footer>
+    </footer >
   )
 }

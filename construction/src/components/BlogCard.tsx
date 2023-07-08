@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Button from "./Button"
-
 interface BlogCardProps {
   title: string
   description: string
@@ -9,7 +8,7 @@ interface BlogCardProps {
 }
 export default function BlogCard({title, description, image, link}: BlogCardProps) {
   return (
-    <div className="relative flex min-w-1/2 max-w-2/3 md:w-9/12 items-end justify-center text-center">
+    <div className="relative flex min-w-[240px] max-w-[360px] items-end justify-center text-center">
       <Image src={image} alt="" className="relative w-full object-contain" />
       <div className="absolute flex flex-col items-center gap-2 pb-8 px-4">
         <h2 className="font-bold text-xl text-white">
